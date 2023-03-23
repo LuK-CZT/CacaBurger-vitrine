@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>CacaBurger - Fast Food</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="script.js" defer></script>
-    <title>CacaBurger</title>
 </head>
+
 <body>
-    
+    <header>
+        <nav id="navbar">
+            <div><a class="nav-links" href="#accueil">Accueil</a></div>
+            <div><a class="nav-links" href="#about">A propos</a></div>
+            <div><a class="nav-links" href="#menu">Menu</a></div>
+        </nav>
+        <section class="hero" id="accueil">
+            <div class="hero-content">
+                <h1>CacaBurger</h1>
+                <p>Le fast food de qualité qui vous offre des burgers savoureux au caca.</p>
+                <div>
+                    <a href="#about" class="btn" id="cta-btn">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section id="about">
+        <h2>A propos de nous</h2>
+        <p>CacaBurger est une chaîne de fast food fondée en 2023 avec pour objectif de fournir des burgers de cacalité à
+            un prix abordable. Nous utilisons des ingrédients frais et de qualité supérieure pour garantir une
+            expérience de dégustation unique pour chaque client.</p>
+        <a href="#menu" class="btn">Voir le menu</a>
+    </section>
+    <section id="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-item">
+            <img src="/images/simple.png" alt="Burger">
+            <h3>Burger au caca Classique</h3>
+            <p>Pain brioché, steak de caca, salade, tomate, oignons, fromage et sauce pipi.</p>
+            <span class="price">5.50€</span>
+        </div>
+        <div class="menu-item">
+            <img src="./images/deluxe.png" alt="deluxe">
+            <h3>Burger Deluxe au caca mou</h3>
+            <p>Pain brioché, 2 steak de caca, salade, tomate, oignons, fromage de bite, sauce pipi supplément caca mou.</p>
+            <span class="price">7€</span>
+        </div>
+        <div class="menu-item">
+            <img src="images/rustique.png" alt="rustique">
+            <h3>Le Rustique</h3>
+            <p>Pain maison, 2 gros caca consistants fait le matin même, tomates, salade, oignons fromage au pipi et sauce diarrhée.</p>
+            <span class="price">10.50€</span>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#"><img src="./images/instagram.png" alt="insta"></a></li>
+            <li><a href="#"> <img src="/images/signe-twitter.png" alt=""> </ul>
+                    <p>© 2023 CacaBurger - Tous droits réservés.</p>
+    </footer>
 </body>
+
 </html>
