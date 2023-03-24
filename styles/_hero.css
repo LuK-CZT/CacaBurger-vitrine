@@ -1,0 +1,74 @@
+.hero {
+	color: #fff;
+	height: 100vh;
+	background-image: url(../images/bg4.png);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+}
+
+.hero h1 {
+	font-size: 8rem;
+	border-top: solid #fff 10px;
+	border-bottom: solid #fff 10px;
+}
+
+.hero p {
+	margin: 2rem 0 0 1rem;
+	font-size: 1.3rem;
+	text-shadow: -3px 3px 2px rgb(0, 0, 0);
+}
+
+#cta-btn {
+	color: #fff;
+	position: relative;
+}
+
+#cta-btn:hover:before {
+	content: "En savoir plus";
+	position: absolute;
+	bottom: 80px;
+	left: -40px;
+	color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	width: 150px;
+	text-shadow: -3px 3px 2px rgb(0, 0, 0);
+}
+
+.hero-content {
+	text-align: center;
+}
+
+.hero-content h1 {
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-delay: .3s;
+	animation-fill-mode: forwards;
+}
+
+.hero-content p {
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: .7s;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+}
+
+.btn {
+	position: relative;
+	top: 15rem;
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: .7s;
+	animation-delay: 1.1s;
+	animation-fill-mode: forwards;
+	width: 100%;
+}
+
+.btn img {
+	width: 70px;
+}
