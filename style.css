@@ -66,19 +66,84 @@ nav.scrolled {
 /* --- HERO --- */
 
 .hero {
+	color: #fff;
 	height: 100vh;
-	background-image: url(./images/hero-bg2.png);
+	background-image: url(./images/bg4.png);
 	background-size: cover;
+	background-position: bottom 10px right 0px;
 	display: flex;
+	justify-content: center;
 	align-items: center;
-	margin-left: 5%;
+	text-shadow: 0 3px 10px rgba(0, 0, 0, 1);
 }
 
 .hero h1 {
 	font-size: 8rem;
+	border-top: solid #fff 10px;
+	border-bottom: solid #fff 10px;
 }
 
 .hero p {
 	margin: 1rem 0 0 1rem;
 	font-size: 1.2rem;
+	text-shadow: 0 5px 5px rgb(0, 0, 0);
+}
+
+#cta-btn {
+	color: #fff;
+}
+
+.hero-content {
+	text-align: center;
+}
+
+.hero-content h1 {
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-delay: .3s;
+	animation-fill-mode: forwards;
+}
+
+.hero-content p {
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: .7s;
+	animation-delay: .7s;
+	animation-fill-mode: forwards;
+}
+
+.btn {
+	position: relative;
+	top: 15rem;
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: .7s;
+	animation-delay: 1.1s;
+	animation-fill-mode: forwards;
+	width: 100%;
+}
+
+.btn img {
+	width: 70px;
+}
+
+
+
+
+
+
+/* --- ANIMATIONS --- */
+
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
