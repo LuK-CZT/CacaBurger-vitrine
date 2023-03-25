@@ -21,12 +21,27 @@ links.forEach(link => {
 });
 
 // on gère la border de la navbar au scroll
-window.onscroll = function() {
-    const navbar = document.getElementById("navbar");
-    if (window.pageYOffset > 0) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
+window.onscroll = function () {
+  const navbar = document.getElementById("navbar");
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 };
-  
+
+// faire un prout
+
+const audio1 = document.getElementById('fart');
+const audio2 = document.getElementById('fart2');
+const audio3 = document.getElementById('fart3');
+
+const audioTab = [audio1, audio2, audio3];
+
+const menuImg = document.querySelectorAll('.menu-img')
+
+menuImg.forEach(img => {
+  img.addEventListener('click', () => {
+    audioTab[Math.floor(Math.random() * 3)].play()
+  })
+})
