@@ -1,9 +1,9 @@
 /* --- RESET CSS --- */
-@import url(styles/_hero.css);
-@import url(styles/_navbar.css);
-@import url(styles/_about.css);
-@import url(styles/_menu.css);
-@import url(styles/_footer.css);
+@import url(styles/hero.css);
+@import url(styles/navbar.css);
+@import url(styles/about.css);
+@import url(styles/menu.css);
+@import url(styles/footer.css);
 
 
 
